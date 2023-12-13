@@ -23,7 +23,7 @@ main h1{
   margin-top: 10%;
   text-align: center;
   font-size: 70px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .container{
@@ -40,9 +40,13 @@ button{
   border-color:#e8e5e480; 
   height: 40px;
   border: 0px;
+  
 }
 
- 
+ .word-spacing{
+  margin-left: 70px;
+  margin-bottom: -20px;
+ }
 
 
 #unique-button {
@@ -57,17 +61,29 @@ button{
 #scrollButton{
   position:fixed;
   border:none;
-  height: 50px;
+  margin-top: 20px;
+  height: 40px;
   width: 200px;
   cursor:pointer;
   transition:background-color 0.3, opacity 0.3;
   z-index: 1;
   
- 
-  
 }
 
-#container1{
+.separate-button{
+  position:fixed;
+  padding-left: 7px;
+  padding-right:7px ;
+  padding-top: 1px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  cursor:pointer;
+  margin-right: 20px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+#container1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +99,7 @@ position: fixed;
 cursor:pointer;
 border: none;
 width: 70px;
-margin-bottom: 5%;
+margin-bottom: 9%;
 z-index: 1;
 
 }
@@ -120,13 +136,14 @@ z-index: 1;
   
 }
 
+
 img{
   max-width: 100%;
   max-height: 100%;
   border-radius: 10px;
 }
 
-.fadeup {
+main, div, .fadeup {
   transform: translateY(50px);
    opacity: 4;
    transition-property: transform, opacity;
@@ -175,3 +192,19 @@ footer.container{
   margin-bottom: 5%;
   
 }
+
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+h6{
+  font-size: 40px;
+  text-align: center;
+}
+
+
