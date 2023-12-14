@@ -96,22 +96,15 @@ background-color:
 #000000;
 color: #ffffff;
 position: fixed;
+bottom:30% ;
 cursor:pointer;
 border: none;
 width: 70px;
-
-margin-bottom: 9%;
+margin-left: 48%;
 z-index: 1;
-
 }
 
-#container2{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10%;
 
-}
 
 
 .grid-container{
@@ -144,13 +137,7 @@ img{
   border-radius: 10px;
 }
 
- .fadeup {
-  transform: translateY(50px);
-   opacity: 4;
-   transition-property: transform, opacity;
-   transition-duration: 5s;
-   transition-timing-function: linear;
- }
+
  
  section .in-view {
   transform: none;
@@ -209,4 +196,46 @@ h6{
   margin-top: 10%;
 }
 
+
+
+/* Animation fade up */
+
+@keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+      transform: translate3d(0,40px,0)
+  }
+
+  to {
+      transform: translate3d(0,0,0);
+      opacity: 1
+  }
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
 
