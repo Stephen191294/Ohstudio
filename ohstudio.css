@@ -106,7 +106,7 @@ z-index: 1;
 
 .grid-container{
   display: grid;
-  grid-template-columns: repeat('2, 1fr');
+  grid-template-columns: repeat(2, 1fr);
   flex-direction: column;
  justify-content: space-around;
  align-items: center;
