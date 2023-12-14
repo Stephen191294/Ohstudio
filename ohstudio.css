@@ -3,7 +3,7 @@ body{
   #ffffff;
   margin: 0;
   padding:0;
-  margin-bottom: 0%;
+  margin-bottom: 0;
   margin-top: 4%;
 }
 
@@ -19,7 +19,7 @@ h3{
 }
   
 
-main h1{
+main, h1{
   margin-top: 10%;
   text-align: center;
   font-size: 70px;
@@ -39,7 +39,7 @@ button{
    border-radius: 20px;
   border-color:#e8e5e480; 
   height: 40px;
-  border: 0px;
+  border: 0;
   
 }
 
@@ -72,10 +72,7 @@ button{
 
 .separate-button{
   position:fixed;
-  padding-left: 7px;
-  padding-right:7px ;
-  padding-top: 1px;
-  padding-bottom: 0px;
+  padding: 1px 7px 0 7px;
   border-radius: 20px;
   cursor:pointer;
   margin-right: 20px;
@@ -109,20 +106,19 @@ z-index: 1;
 
 .grid-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat('2, 1fr');
   flex-direction: column;
  justify-content: space-around;
  align-items: center;
  padding:20px;
  margin: 5%;
  margin-left: 7%;
- gap: 3px;
-}
+ }
 
 
 .grid-box{
   width: 95%;
-  height: 50%px;
+  height: 50%;
   color: #fff;
   text-align: center;
   line-height: 100px;
@@ -238,4 +234,3 @@ h6{
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
 }
-
