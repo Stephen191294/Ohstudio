@@ -1,3 +1,8 @@
+a{
+  color:#000000;
+}
+
+
 body{
   background-color: 
   #ffffff;
@@ -5,31 +10,6 @@ body{
   padding:0;
   margin-bottom: 0;
   margin-top: 4%;
-}
-
-h2{
-  text-align: center;
-  font-size: 40px;
-}
-  
-h3{
-  color:#7f7f7f;
-  text-align: center;
-  font-size: 40px;
-}
-  
-
-main, h1{
-  margin-top: 10%;
-  text-align: center;
-  font-size: 70px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-}
-
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
   
 }
 
@@ -43,19 +23,173 @@ button{
   
 }
 
- .word-spacing{
-  margin-left: 70px;
-  margin-bottom: -20px;
- }
-
-
-#unique-button {
-  border: none;
-  background-color:#ffffff;
+footer.container{
+  margin-bottom: 5%;
   
 }
 
+footer, p, ul{
+  list-style: none;
+  margin-top: 10%;
+}
 
+footer p{
+  margin-right: 70%;
+}
+
+
+h2{
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+  
+h3{
+  color:#7f7f7f;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Roboto', sans-serif;
+}
+  
+h6{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10%;
+  font-family: 'Roboto', sans-serif;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  
+}
+
+.grid-box:hover img{
+  filter: blur(9px);
+}
+
+
+main, h1{
+  margin-top: 10%;
+  text-align: center;
+  font-size: 70px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+  opacity: 0
+}
+
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+#container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  flex-direction: column;
+ justify-content: space-around;
+ align-items: center;
+ padding:20px;
+ margin: 5%;
+ margin-left: 7%;
+ }
+
+ .grid-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: filter 0.7s ease;
+}
+
+
+.grid-box{
+  position: relative;
+  overflow: hidden;
+  width: 95%;
+  height: 100%;
+  color:#7f7f7f ;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  
+}
+
+.grid-box:hover  {
+  opacity: 1;
+}
+/*experimental*/
+.icon {
+  background:none;
+  color: #fff;
+  font-size: 50px;
+  padding: 10px;
+  margin: 20px;
+  filter: none;
+}
+
+
+.img:hover {
+  filter: blur(10px);
+  
+}
+
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce;
+  animation-duration: 2s;
+}
+
+.no-underline{
+  text-decoration: none;
+}
+
+.overlay {
+  position: absolute;
+  filter: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay:hover {
+  opacity: 1;
+  filter: none;
+}
 
 
 #scrollButton{
@@ -80,13 +214,7 @@ button{
   z-index: 1;
 }
 
-#container1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-}
-  
+
 #scrollButton2{
 
 background-color:
@@ -102,99 +230,31 @@ z-index: 1;
 }
 
 
+.text {
+  filter:none;
+  
+  color:  gray;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  margin: 20px;
+  font-size: 24px;
+  font-weight: 900;
+  
+}
 
+#unique-button {
+  border: none;
+  background-color:#ffffff;
+  font-size: 10px;
+  
+}
 
-.grid-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  flex-direction: column;
- justify-content: space-around;
- align-items: center;
- padding:20px;
- margin: 5%;
- margin-left: 7%;
+ .word-spacing{
+  margin-left: 70px;
+  margin-bottom: -20px;
  }
 
 
-.grid-box{
-  width: 95%;
-  height: 50%;
-  color: #fff;
-  text-align: center;
-  line-height: 100px;
-  margin: 10px
-  
-}
-
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 10px;
-}
-
-
- 
- section .in-view {
-  transform: none;
-  opacity: 1;
-}
-
-.image-container:hover {
-  filter: blur(5px);
-}
-
-.image-container {
-  position: relative;
-  overflow: hidden;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  transition: filter 0.7s ease;
-}
-
-footer, p, ul{
-  list-style: none;
-  margin-top: 10%;
-}
-
-footer p{
-  margin-right: 70%;
-}
-
-a{
-  color:#000000;
-}
-
-.no-underline{
-  text-decoration: none;
-}
-
-footer.container{
-  margin-bottom: 5%;
-  
-}
-
-
-.my-element {
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce;
-  animation-duration: 2s;
-}
-
-h6{
-  font-size: 40px;
-  text-align: center;
-  margin-top: 10%;
-}
-
-
-
-/* Animation fade up */
 
 @keyframes fadeInUp {
   from {
@@ -216,21 +276,4 @@ h6{
       transform: translate3d(0,0,0);
       opacity: 1
   }
-}
-
-.animated {
-  animation-duration: 1s;
-  animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-fill-mode: both
-}
-
-.animatedFadeInUp {
-  opacity: 0
-}
-
-.fadeInUp {
-  opacity: 0;
-  animation-name: fadeInUp;
-  -webkit-animation-name: fadeInUp;
 }
