@@ -12,9 +12,15 @@
       <title>Oh.studio</title>
     </head>
       <body>
-        <div id="container1">
-        <button class="animated animatedFadeInUp fadeInUp " id="scrollButton"><span class="separate-button">Home</span><span class="word-spacing">Profile Contact</span></button>
+        <div class="navbar">
+        <button id="toggleButton" onclick="toggleLinks()">Search</button>
+        <div class="links" id="linksContainer">
+          <a href="https://oh.studio/ ">Home</a>
+          <a href="https://oh.studio/profile ">Profile</a>
+          <a href="https://oh.studio/contact ">Contact</a>
         </div>
+      </div>
+    
       <main class="animated animatedFadeInUp fadeInUp ">
         <h1>A brand and product<br/>designer working<br/> with clients globally</h1>
         <br/>
@@ -123,14 +129,13 @@
         </div>
         <div class="grid-box">
           <div class="animated animatedFadeInUp fadeInUp "> 
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script><lottie-player src="https://lottie.host/9717e527-4fed-43f2-81f3-072962c6075d/OJXUgm2X0z.json" background="##FFFFFF" speed="1" style="max-width: 100%; max-height: 100%" loop autoplay direction="1" mode="normal"></lottie-player>
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js "></script><lottie-player src="https://lottie.host/9717e527-4fed-43f2-81f3-072962c6075d/OJXUgm2X0z.json" background="##FFFFFF" speed="1" style="max-width: 100%; max-height: 100%"  loop autoplay direction="1" mode="normal"></lottie-player>
             <div class="overlay">
               <div class="text">Relationships</div>
               <div class="icon"><box-icon name='right-top-arrow-circle'></box-icon>
               </div>
             </div>
-
-          </div>
+        </div>
         </div>
         <div class="grid-box">
           <div class="animated animatedFadeInUp fadeInUp ">
@@ -174,6 +179,7 @@
       <script src="ohstudio.js"></script>
     </body>
 </html>
+
 
 
 
