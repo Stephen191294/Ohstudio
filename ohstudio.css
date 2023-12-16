@@ -21,6 +21,7 @@ button{
   height: 40px;
   border: 0;
   
+  
 }
 
 footer.container{
@@ -65,9 +66,6 @@ img{
   
 }
 
-.grid-box:hover img{
-  filter: blur(9px);
-}
 
 
 main, h1{
@@ -96,7 +94,7 @@ main, h1{
   align-items: center;
   
 }
-
+/* irrelevant*/
 #container1 {
   display: flex;
   align-items: center;
@@ -104,10 +102,19 @@ main, h1{
   
 }
 
+
 .fadeInUp {
   opacity: 0;
   animation-name: fadeInUp;
   -webkit-animation-name: fadeInUp;
+}
+
+.grid-box:hover img{
+  filter: blur(9px);
+}
+
+.grid-box:hover lottie-player{
+filter: blur(9px);
 }
 
 .grid-container{
@@ -125,7 +132,7 @@ main, h1{
   width: 100%;
   height: auto;
   display: block;
-  transition: filter 0.7s ease;
+  transition: filter 0.8s ease;
 }
 
 
@@ -147,7 +154,6 @@ main, h1{
 /*experimental*/
 .icon {
   background:none;
-  color: #fff;
   font-size: 50px;
   padding: 10px;
   margin: 20px;
@@ -160,6 +166,17 @@ main, h1{
   
 }
 
+.links {
+  display: none;
+}
+
+.links a {
+  display: block;
+  color:  #000000 ;
+  text-decoration: none;
+  padding: 5px;
+}
+
 .my-element {
   display: inline-block;
   margin: 0 0.5rem;
@@ -167,6 +184,20 @@ main, h1{
   animation: bounce;
   animation-duration: 2s;
 }
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: 
+  #e8e5e480;
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  z-index: 1;
+  opacity: 1;
+}
+
 
 .no-underline{
   text-decoration: none;
@@ -184,6 +215,23 @@ main, h1{
   align-items: flex-start;
   opacity: 0;
   transition: opacity 0.3s ease;
+  
+}
+/*exérimental*/
+.overlay1{
+  position: absolute;
+  filter: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  
+  
 }
 
 .overlay:hover {
@@ -277,3 +325,4 @@ z-index: 1;
       opacity: 1
   }
 }
+
